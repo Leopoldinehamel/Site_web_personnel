@@ -1,0 +1,192 @@
+/* couleur fond de page */
+html, body{
+    background-color: #fff8e7;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding-top: 60px;  /* pour compenser le header fixe */
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 40px; 
+}
+
+h1 {
+    color: #3F51B5;
+    margin-left: 30px;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: #3F51B5;
+    margin-left: 50px;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description{
+    color: #3F51B5;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+    margin: 50px;
+    font-size: 18px;
+}
+
+.entete {
+    position: fixed; 
+    top: 0;           
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    display: flex; /* aligne tout les élem de l'entête */
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+    background-color: #fff8e7;
+}
+
+.trait-entete{
+    border: none;
+    height: 2px;
+    background-color:#3F51B5;
+    margin: 0;
+}
+
+.logoacceuil img{
+    height: 40%;
+    width: 40%;
+}
+/* conteneur des boutons */
+.boutons_sommaire {
+    display: flex;
+    gap: 10px;
+}
+/* Style des boutons sommaire */
+.boutons_sommaire button{
+    background-color:#FF6F61;
+    border: none;
+    color: #fff8e7;
+    padding: 15px 0;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+/* effet au survol */
+.boutons_sommaire button:hover {
+    background-color: #e35c50;
+}
+
+/* ----------------------------------------------------------------- */
+/* Vidéo */
+.video{
+    flex: auto;
+    margin-left: 50px;
+}
+/* carousel  */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 30px auto;
+}
+.carousel img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* table */
+
+.table {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* espace entre les deux tableaux */
+    flex-wrap: wrap; /* pour que ça s'adapte sur mobile */
+    margin: 40px 0;
+}
+
+.table table {
+    width: 500px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table caption {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+}
+
+
+.prev {
+    left: -50px;
+}
+
+.next {
+    right: -50px;
+}
+
+.carousel button:hover {
+    background-color: #e35c50;
+
+}
+
+/* iframe page inernet  */
+.pageinternet {
+    max-width: 900px;        /* largeur maximale pour ne pas que ça s'étale sur tout l'écran */
+    margin: 40px auto;       /* centre horizontalement et ajoute une marge verticale */
+    padding: 0 20px;         /* marge interne à gauche et à droite */
+    text-align: center;      /* centre le contenu comme les titres */
+}
+
+.pageinternet iframe {
+    border: none;
+    width: 100%;             /* prend toute la largeur de .pageinternet */
+    height: 300px;           /* ou ajuste selon tes besoins */
+    border-radius: 10px;     /* arrondir les coins si tu veux un style doux */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ombrage léger */
+}
+
+/* ----------------------------------------------------------------- */
+
+.footer {
+    width: 100%;
+    background-color: #FF6F61;
+    color: #fff8e7;                  /* Couleur du texte */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.footer a {
+    color: #fff8e7;                  /* Lien de même couleur que le texte */
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #ffe1d6;                  /* Changement de couleur au survol */
+}
+

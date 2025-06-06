@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- utilisation des carractére spéciaux correctement -->
+    <meta charset="UTF-8">
+    <title>Loisirs Léopoldine H.</title>
+        <!--inserer un favicon-->
+        <link rel="icon" href="Images/favicone.png">
+
+        <link rel="stylesheet" href="./CSS/CSS_site_web_personnel.css">
+       
+</head>
+
+
+<body>
+    <header class="entete">
+        <a href="1_Page_Acceuil.html" class="logoacceuil">
+            <img src="Images/logo2.png" alt="logo retour acceuil">
+        </a>
+       
+        <div class="boutons_sommaire">
+            <a href="2_Formations.html"><button>Formation</button></a>
+            <a href="3_Parcours_professionnel.html"><button>Parcours professionnel</button></a>
+            <a href="4_Competences.html"><button>Compétences</button></a>
+            <a href="5_Experiences.html"><button>Expériences</button></a> 
+            <a href="6_Loisir.html"><button>Loisirs</button></a>
+        </div>
+    </header>
+    <!---------------------------------------------------------------------------------->
+    <h1>Mes loisirs</h1>
+        <h2>Les voyages</h2>
+
+        <p class="description">
+            Voyager me permet de découvrir de nouvelles cultures, paysages et traditions. 
+            C'est une source d'enrichissement personnel, de rencontres et de souvenirs inoubliables.
+        </p>
+
+        <div class="carousel">
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <img id="carousel-image" src="Images/voyage1.jpg" alt="Photo de voyage">
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+    <!---------------------------------------------------------------------------------->
+   <footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Léopoldine Hamel</p>
+        <p>Contactez-moi</p>
+        <p>Email : <a href="mailto:leopoldine.hamel@gmail.com">leopoldine.hamel@gmail.com</a></p>
+        <p>Téléphone : +33 7 82 40 60 57</p>
+        <p>
+            LinkedIn : 
+            <a href="https://www.linkedin.com/in/léopoldine-hamel/" target="_blank">
+                Mon profil LinkedIn
+            </a>
+        </p>
+    </div>
+</footer>
+<script src="./JavaScript/JavaScript_site_web_personnel.js"></script>
+
+</body>
+</html>
